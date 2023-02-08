@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.pic {
+    width: 100%;
+}
+
+.quiz {
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
