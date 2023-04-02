@@ -144,8 +144,8 @@ function updateUI() {
         activateQuiz(
             "You and your boss", 
             "Anyone who asks", 
-            "Only you!", 
-            "Only you and Stoffel <br/> the red panda!"
+            "Only me!", 
+            "Only you Stoffel <br/> the red panda!"
         )
 
 
