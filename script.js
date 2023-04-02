@@ -62,7 +62,7 @@ const sequence = [
         image: "images/confidentiality.jpeg"
     },
     { // 12
-        speech: "Question about confidentiality?",
+        speech: "Harder question about confidentiality?",
         image: "images/smile.jpeg"
     },
     { // 13
@@ -75,7 +75,7 @@ const sequence = [
     },
     { // 15
         speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted.",
-        image: "images/confidentiality.jpeg"
+        image: "images/confidentiality.jpeg" // to be changed to integrity, can't find the image
     },
     { // 16
         speech: "Pop quiz: Basic question about integrity?",
@@ -94,7 +94,7 @@ const sequence = [
         image: "images/confidentiality.jpeg"
     },
     { // 20
-        speech: "Harder uestion about integrity?",
+        speech: "Harder question about integrity?",
         image: "images/smile.jpeg"
     },
     { // 21
@@ -126,7 +126,7 @@ const sequence = [
         image: "images/confidentiality.jpeg"
     },
     { // 28
-        speech: "Harder uestion about availability?",
+        speech: "Harder question about availability?",
         image: "images/smile.jpeg"
     },
     { // 29
