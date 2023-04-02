@@ -21,8 +21,8 @@ p, button {
 .speech {
     margin-top: 5vh;
     text-align: center;
-    color: orangered;
-
+    color: rgb(184, 49, 0);
+    /* width */
 }
 
 .quiz {
@@ -36,7 +36,7 @@ p, button {
     text-align: center;
 }
 
-.links p {
+.links * {
     margin-bottom: 2.5rem;
 }
 

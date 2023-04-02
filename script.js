@@ -19,20 +19,16 @@ const sequence = [
 ]
 
 let index = 0;
-
-back.style.display = 'none';
+updateStoffel();
+updateUI();
 
 next.addEventListener("click", () => {
-    back.style.display = '';
-    next.style.display = 'none';
     index++;
     updateStoffel();
     updateUI();
 });
 
 back.addEventListener("click", () => {
-    back.style.display = 'none';
-    next.style.display = '';
     index--;
     updateStoffel();
     updateUI();
