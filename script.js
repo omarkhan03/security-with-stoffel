@@ -142,10 +142,10 @@ function updateUI() {
         back.style.display = 'none';
     } else if (index == 8) {
         activateQuiz(
-            "You and your boss", 
+            "Me and my boss", 
             "Anyone who asks", 
             "Only me!", 
-            "Only you Stoffel <br/> the red panda!"
+            "Only you, Stoffel <br/> the red panda!"
         )
 
 
