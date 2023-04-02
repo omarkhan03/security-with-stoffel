@@ -61,6 +61,86 @@ const sequence = [
         speech: "Confidentiality is important because it prevents unauthorized users from accessing sensitive information.",
         image: "images/confidentiality.jpeg"
     },
+    { // 12
+        speech: "Question about confidentiality?",
+        image: "images/smile.jpeg"
+    },
+    { // 13
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 14
+        speech: "Correct! explenation.",
+        image: "images/correct.jpeg"
+    },
+    { // 15
+        speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted.",
+        image: "images/confidentiality.jpeg"
+    },
+    { // 16
+        speech: "Pop quiz: Basic question about integrity?",
+        image: "images/smile.jpeg"
+    },
+    { // 17
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 18
+        speech: "Correct! explenation.",
+        image: "images/correct.jpeg"
+    },
+    { // 19
+        speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
+        image: "images/confidentiality.jpeg"
+    },
+    { // 20
+        speech: "Harder uestion about integrity?",
+        image: "images/smile.jpeg"
+    },
+    { // 21
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 22
+        speech: "Correct! explenation.",
+        image: "images/correct.jpeg"
+    },
+    { // 23
+        speech: "Perfect! Finally, we have availability, which is the principle that data should be accessible to authorized users when they need it.",
+        image: "images/availability.jpeg"
+    },
+    { // 24
+        speech: "Pop quiz: Basic question about availability?",
+        image: "images/smile.jpeg"
+    },
+    { // 25
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 26
+        speech: "Correct! explenation.",
+        image: "images/correct.jpeg"
+    },
+    { // 27
+        speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
+        image: "images/confidentiality.jpeg"
+    },
+    { // 28
+        speech: "Harder uestion about availability?",
+        image: "images/smile.jpeg"
+    },
+    { // 29
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 30
+        speech: "Correct! explenation.",
+        image: "images/correct.jpeg"
+    },
+    { // 31
+        speech: "Now that you know about the security triad, you can protect yourself from cyber attacks!",
+        image: "images/sleep.jpeg"
+    },
 ]
 
 let index = 0;
@@ -71,8 +151,8 @@ next.addEventListener("click", () => {
 
     if (index === 4) { 
         index = 6; 
-    } else if (index === 9) {
-        index = 11;
+    } else if (index >= 9 && index % 4 === 1 && index <= 29) {
+        index += 2;
     }
     else {
         index++;
@@ -87,9 +167,13 @@ back.addEventListener("click", () => {
     if (index === 6) {
         index = 2;
     }
-    else if (index === 10) {
-        index = 8;
-    } else {
+    else if (index >= 10 && index % 4 === 2 && index <= 30) {
+        index -= 2;
+    }
+    else if (index >= 11 && index % 4 === 3 && index <= 31) {
+        index -= 3;
+    }     
+    else {
         index--;
     }
 
@@ -147,10 +231,49 @@ function updateUI() {
             "Only me!", 
             "Only you, Stoffel <br/> the red panda!"
         )
-
-
+    } else if (index == 12) {
+        activateQuiz(
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+        )
+    } else if (index == 16) {
+        activateQuiz(
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+        )
+    } else if (index == 20) {
+        activateQuiz(
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+        )
+    } else if (index == 24) {
+        activateQuiz(
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+        )
+    } else if (index == 28) {
+        activateQuiz(
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+        )
+    } else if (index == 12) {
+        activateQuiz(
+            "a1",
+            "a2",
+            "a3",
+            "a4"
+        )
     }
-
 }
 
 function activateQuiz(answer1, answer2, answer3, answer4) {
@@ -165,8 +288,9 @@ function activateQuiz(answer1, answer2, answer3, answer4) {
 }
 
 a1.addEventListener("click", () => {
-
-    if (index == 8) {
+    if (index == 12 || index == 24) {
+        index += 2;
+    } else {
         index++;
     }
     updateStoffel();
@@ -174,7 +298,9 @@ a1.addEventListener("click", () => {
 })
 
 a2.addEventListener("click", () => {
-    if (index == 8) {
+    if (index == 16) {
+        index += 2;
+    } else {
         index++;
     }
     updateStoffel();
@@ -182,15 +308,19 @@ a2.addEventListener("click", () => {
 })
 
 a3.addEventListener("click", () => {
-    if (index == 8) {
-        index = 10;
+    if (index == 8 || index == 28) {
+        index += 2;
+    } else {
+        index++;
     }
     updateStoffel();
     updateUI();
 })
 
 a4.addEventListener("click", () => {
-    if (index == 8) {
+    if (index == 20) {
+        index += 2;
+    } else {
         index++;
     }
     updateStoffel();
