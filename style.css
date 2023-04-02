@@ -22,13 +22,18 @@ p, button {
     margin-top: 5vh;
     text-align: center;
     color: rgb(184, 49, 0);
-    /* width */
+    width: 50vw;
+    transform: translateX(50%);
 }
 
 .quiz {
-    text-align: center;
-    padding: 100px;
-    color: white;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .links {
@@ -37,7 +42,7 @@ p, button {
 }
 
 .links * {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 button {
