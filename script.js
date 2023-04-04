@@ -190,8 +190,18 @@ updateUI();
 next.addEventListener("click", () => {
 
     if (index === 4) { 
-        index = 6; 
-    } else if (index >= 9 && index % 4 === 1 && index <= 29) {
+        index = 6;
+    }
+    else if (index === 9) {
+        index = 11;
+    }
+    else if (index >= 13 && index % 6 === 1 && index <= 40) {
+        index += 4;
+    }
+    else if (index >= 13 && index % 6 === 2 && index <= 40) {
+        index += 3;
+    }
+    else if (index >= 13 && index % 6 === 3 && index <= 40) {
         index += 2;
     }
     else {
@@ -207,11 +217,23 @@ back.addEventListener("click", () => {
     if (index === 6) {
         index = 2;
     }
-    else if (index >= 10 && index % 4 === 2 && index <= 30) {
+    else if (index === 10) {
+        index = 8;
+    }
+    else if (index === 11) {
+        index = 8;
+    }
+    else if (index >= 13 && index % 6 === 2 && index <= 40) {
         index -= 2;
     }
-    else if (index >= 11 && index % 4 === 3 && index <= 31) {
+    else if (index >= 13 && index % 6 === 3 && index <= 40) {
         index -= 3;
+    }
+    else if (index >= 13 && index % 6 === 4 && index <= 40) {
+        index -= 4;
+    }
+    else if (index >= 13 && index % 6 === 5 && index <= 40) {
+        index -= 5;
     }     
     else {
         index--;
@@ -266,9 +288,9 @@ function updateUI() {
         back.style.display = 'none';
     } else if (index == 8) {
         activateQuiz(
-            "Me and my boss", 
-            "Anyone who asks", 
+            "Me and my boss",
             "Only me!", 
+            "Anyone who asks",
             "Only you, Stoffel <br/> the red panda!"
         )
     } else if (index == 12) {
@@ -278,35 +300,28 @@ function updateUI() {
             "a3",
             "a4"
         )
-    } else if (index == 16) {
+    } else if (index == 18) {
         activateQuiz(
             "A casual user's system is leaked",
             "Malware that corrupts the files in the system",
             "Creating backups of sensitive files",
             "Spilling water on your computer while you're logged in to the system"
         )
-    } else if (index == 20) {
+    } else if (index == 24) {
         activateQuiz(
             "a1",
             "a2",
             "a3",
             "a4"
         )
-    } else if (index == 24) {
+    } else if (index == 30) {
         activateQuiz(
             "A weak internet connection",
             "Allowing access to the system from both mobile phones and computers",
             "Creating ransomware for the system",
             "Having the option of viewing the website in multiple languages"
         )
-    } else if (index == 28) {
-        activateQuiz(
-            "a1",
-            "a2",
-            "a3",
-            "a4"
-        )
-    } else if (index == 12) {
+    } else if (index == 36) {
         activateQuiz(
             "a1",
             "a2",
@@ -328,40 +343,32 @@ function activateQuiz(answer1, answer2, answer3, answer4) {
 }
 
 a1.addEventListener("click", () => {
-    if (index == 12 || index == 24) {
-        index += 2;
-    } else {
-        index++;
-    }
+    index++;
     updateStoffel();
     updateUI();
 })
 
 a2.addEventListener("click", () => {
-    if (index == 16) {
-        index += 2;
-    } else {
-        index++;
-    }
+    index += 2;
     updateStoffel();
     updateUI();
 })
 
 a3.addEventListener("click", () => {
-    if (index == 8 || index == 28) {
-        index += 2;
+    if (index === 8) {
+        index ++;
     } else {
-        index++;
+        index += 3;
     }
     updateStoffel();
     updateUI();
 })
 
 a4.addEventListener("click", () => {
-    if (index == 20) {
-        index += 2;
+    if (index === 8) {
+        index ++;
     } else {
-        index++;
+        index += 4;
     }
     updateStoffel();
     updateUI();
