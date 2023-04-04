@@ -73,44 +73,44 @@ const sequence = [
         speech: "Correct! explenation.",
         image: "images/correct.jpeg"
     },
-    { // 15
-        speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted.",
-        image: "images/confidentiality.jpeg" // to be changed to integrity, can't find the image
-    },
-    { // 16
-        speech: "Pop quiz: Basic question about integrity?",
-        image: "images/smile.jpeg"
-    },
-    { // 17
+    { // 15 NEW SLIDE
         speech: "Wrong! explenation.",
         image: "images/wrong.jpeg"
     },
+    { // 16 NEW SLIDE
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 17
+        speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted.",
+        image: "images/sleep.jpeg"
+    },
     { // 18
-        speech: "Correct! explenation.",
-        image: "images/correct.jpeg"
+        speech: "Which of these would compromise a system's integrity?",
+        image: "images/smile.jpeg"
     },
     { // 19
+        speech: "Wrong! A user's password being leaked would compromise the system's confidentality, not its integrity!",
+        image: "images/wrong.jpeg"
+    },
+    { // 20
+        speech: "Correct! Corruption of files would compromise the system's integrity! Files must always be proteted from tampering and corruption.",
+        image: "images/correct.jpeg"
+    },
+    { // 21 NEW SLIDE
+        speech: "Wrong! Creating backups of sensitive files would actually IMPROVE a system's integrity!",
+        image: "images/wrong.jpeg"
+    },
+    { // 22 NEW SLIDE
+        speech: "Wrong! Spilling water on your computer when you're logged into the system would not compromise the system's integrity, it wil only damage your own computer!",
+        image: "images/wrong.jpeg"
+    },
+    { // 23
         speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
         image: "images/confidentiality.jpeg"
     },
-    { // 20
-        speech: "Harder question about integrity?",
-        image: "images/smile.jpeg"
-    },
-    { // 21
-        speech: "Wrong! explenation.",
-        image: "images/wrong.jpeg"
-    },
-    { // 22
-        speech: "Correct! explenation.",
-        image: "images/correct.jpeg"
-    },
-    { // 23
-        speech: "Perfect! Finally, we have availability, which is the principle that data should be accessible to authorized users when they need it.",
-        image: "images/availability.jpeg"
-    },
     { // 24
-        speech: "Pop quiz: Basic question about availability?",
+        speech: "Harder question about integrity?",
         image: "images/smile.jpeg"
     },
     { // 25
@@ -121,25 +121,65 @@ const sequence = [
         speech: "Correct! explenation.",
         image: "images/correct.jpeg"
     },
-    { // 27
-        speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
-        image: "images/confidentiality.jpeg"
-    },
-    { // 28
-        speech: "Harder question about availability?",
-        image: "images/smile.jpeg"
-    },
-    { // 29
+    { // 27 NEW SLIDE
         speech: "Wrong! explenation.",
         image: "images/wrong.jpeg"
     },
+    { // 28 NEW SLIDE
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 29
+        speech: "Perfect! Finally, we have availability, which is the principle that data should be accessible to authorized users when they need it.",
+        image: "images/availability.jpeg"
+    },
     { // 30
+        speech: "Pop quiz: Given the definition, which of these would BEST improve a system's availability?",
+        image: "images/smile.jpeg"
+    },
+    { // 31
+        speech: "Wrong! A weak internet connection doesn't affect a system's availability, it just makes it less accessible for you!",
+        image: "images/wrong.jpeg"
+    },
+    { // 32
+        speech: "Correct! Having the option of accessing the system regardless of what device you're using is a great way of increasing a system's availability!",
+        image: "images/correct.jpeg"
+    },
+    { // 33 NEW SLIDE
+        speech: "Wrong! Why did you even pick this!? This is the worst option! It completely destroys the system's availability.",
+        image: "images/wrong.jpeg"
+    },
+    { // 34 NEW SLIDE
+        speech: "Sort of? Although having the option to view a website in multiple languages improves its availability, there is a better option!",
+        image: "images/wrong.jpeg"
+    },
+    { // 35
+        speech: "Availability is important because it makes a system more reliable because users will have the safety of knowing the system will always be there.",
+        image: "images/availability.jpeg"
+    },
+    { // 36
+        speech: "Harder question about availability?",
+        image: "images/smile.jpeg"
+    },
+    { // 37
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 38
         speech: "Correct! explenation.",
         image: "images/correct.jpeg"
     },
-    { // 31
+    { // 39 NEW SLIDE
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 40 NEW SLIDE
+        speech: "Wrong! explenation.",
+        image: "images/wrong.jpeg"
+    },
+    { // 41
         speech: "Now that you know about the security triad, you can protect yourself from cyber attacks!",
-        image: "images/sleep.jpeg"
+        image: "images/yawn.jpeg"
     },
 ]
 
@@ -240,10 +280,10 @@ function updateUI() {
         )
     } else if (index == 16) {
         activateQuiz(
-            "a1",
-            "a2",
-            "a3",
-            "a4"
+            "A casual user's system is leaked",
+            "Malware that corrupts the files in the system",
+            "Creating backups of sensitive files",
+            "Spilling water on your computer while you're logged in to the system"
         )
     } else if (index == 20) {
         activateQuiz(
@@ -254,10 +294,10 @@ function updateUI() {
         )
     } else if (index == 24) {
         activateQuiz(
-            "a1",
-            "a2",
-            "a3",
-            "a4"
+            "A weak internet connection",
+            "Allowing access to the system from both mobile phones and computers",
+            "Creating ransomware for the system",
+            "Having the option of viewing the website in multiple languages"
         )
     } else if (index == 28) {
         activateQuiz(
