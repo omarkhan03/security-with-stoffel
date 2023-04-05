@@ -247,6 +247,9 @@ back.addEventListener("click", () => {
     }
     else if (index >= 13 && index % 6 === 5 && index <= 40) {
         index -= 5;
+    }
+    else if (index === 41){
+        index = 36;
     }     
     else {
         index--;
