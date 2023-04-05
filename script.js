@@ -1,6 +1,19 @@
 const back = document.getElementById("back");
 const next = document.getElementById("next");
-const stoffel = document.getElementById("stoffel");
+
+const availability = document.getElementById("availability");
+const confidentiality = document.getElementById("confidentiality");
+const closed1 = document.getElementById("closed");
+const correct = document.getElementById("correct");
+const open1 = document.getElementById("open");
+const peek = document.getElementById("peek");
+const roll = document.getElementById("roll");
+const smile = document.getElementById("smile");
+const sleep = document.getElementById("sleep");
+const wrong = document.getElementById("wrong");
+const yawn = document.getElementById("yawn");
+
+
 const speech = document.getElementById("speech");
 const pwd = document.getElementById("password");
 const no = document.getElementById("no");
@@ -255,8 +268,66 @@ yes.addEventListener("click", () => {
     updateUI();
 })
 
+/* 
+    This function has been updated to reduce lag
+        - Omar  
+*/
 function updateStoffel() {
-    stoffel.src= sequence[index].image;
+
+    availability.style.display = "none";
+    confidentiality.style.display = "none";
+    closed1.style.display = "none";
+    correct.style.display = "none";
+    wrong.style.display = "none";
+    smile.style.display = "none";
+    yawn.style.display = "none";
+    sleep.style.display = "none";
+    peek.style.display = "none";
+    roll.style.display = "none";
+    open1.style.display = "none";
+
+    switch (sequence[index].image) {
+        case "images/availability.jpeg":
+            smile.style.display = "";
+            break;
+        case "images/confidentiality.jpeg":
+            confidentiality.style.display = "";
+            break; 
+        case "images/correct.jpeg":
+            correct.style.display = "";
+            break;
+        case "images/wrong.jpeg":
+            wrong.style.display = "";
+            break;
+        case "images/smile.jpeg":
+            smile.style.display = "";
+            break;
+        case "images/yawn.jpeg":
+            yawn.style.display = "";
+            break;
+        case "images/sleep.jpeg":
+            sleep.style.display = "";
+            break;
+        case "images/peek.jpeg":
+            peek.style.display = "";
+            break;
+        case "images/roll.jpeg":
+            roll.style.display = "";
+            break;
+        case "images/open.jpeg":
+            open1.style.display = "";
+            break;
+        case "images/closed.jpeg":
+            closed1.style.display = "";
+            break;
+        default:
+            console.log("error")
+            smile.style.display = "";
+            break;
+    }
+
+
+
     speech.innerHTML = sequence[index].speech;
 }
 

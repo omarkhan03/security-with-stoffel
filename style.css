@@ -53,7 +53,8 @@ button {
     text-decoration: none;
     transition: 0.3s;
     margin: 0.5rem;
-    display:unset
+    display:unset;
+    max-width: 15rem;
 }
 
 button:hover {
@@ -67,4 +68,8 @@ button:hover {
 
 .hidden {
     visibility: hidden;
+}
+
+.stoffel * {
+    display : none;
 }
