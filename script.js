@@ -288,7 +288,7 @@ function updateStoffel() {
 
     switch (sequence[index].image) {
         case "images/availability.jpeg":
-            smile.style.display = "";
+            availability.style.display = "";
             break;
         case "images/confidentiality.jpeg":
             confidentiality.style.display = "";
