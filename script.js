@@ -120,7 +120,7 @@ const sequence = [
     },
     { // 23
         speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
-        image: "images/confidentiality.jpeg"
+        image: "images/smile.jpeg"
     },
     { // 24
         speech: "Harder question about integrity?",
