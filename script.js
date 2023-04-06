@@ -75,23 +75,23 @@ const sequence = [
         image: "images/confidentiality.jpeg"
     },
     { // 12
-        speech: "Harder question about confidentiality?",
+        speech: "Which of the following best describes the relationship between confidentiality and privacy?",
         image: "images/smile.jpeg"
     },
     { // 13
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used. Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
         image: "images/wrong.jpeg"
     },
     { // 14
-        speech: "Correct! explenation.",
+        speech: "Correct! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used. Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
         image: "images/correct.jpeg"
     },
     { // 15 NEW SLIDE
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Confidentiality and privacy are absolutely related!",
         image: "images/wrong.jpeg"
     },
     { // 16 NEW SLIDE
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Although confidentiality and privacy are related, they are not the same!",
         image: "images/wrong.jpeg"
     },
     { // 17
@@ -123,23 +123,23 @@ const sequence = [
         image: "images/smile.jpeg"
     },
     { // 24
-        speech: "Harder question about integrity?",
+        speech: "Which of these best describes the concept of integrity?",
         image: "images/smile.jpeg"
     },
     { // 25
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Ensuring that data is available to authorized users when they need it describes the concept of availability!",
         image: "images/wrong.jpeg"
     },
     { // 26
-        speech: "Correct! explenation.",
+        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle. In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems. Ensuring data integrity involves using various techniques such as cryptographic hashing, digital signatures, access controls, and backups to detect and prevent unauthorized changes to data.",
         image: "images/correct.jpeg"
     },
     { // 27 NEW SLIDE
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Ensuring that data is protected from unauthorized access and disclosure describes the concept of confidentiality!",
         image: "images/wrong.jpeg"
     },
     { // 28 NEW SLIDE
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Although ensuring that data is stored in a secure and reliable manner might improve a system's integrity, it does not describe the concept of integrity!",
         image: "images/wrong.jpeg"
     },
     { // 29
@@ -171,23 +171,23 @@ const sequence = [
         image: "images/availability.jpeg"
     },
     { // 36
-        speech: "Harder question about availability?",
+        speech: "Which of the following is a common threat to a system's availability?",
         image: "images/smile.jpeg"
     },
     { // 37
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Data breaches and theft of sensitive information are threats to a system's confidentiality!",
         image: "images/wrong.jpeg"
     },
     { // 38
-        speech: "Correct! explenation.",
+        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users. DDoS attacks can be launched using various techniques, such as amplification attacks, reflection attacks, and application-layer attacks, and they can be difficult to mitigate once they are underway.",
         image: "images/correct.jpeg"
     },
     { // 39 NEW SLIDE
-        speech: "Wrong! explenation.",
+        speech: "Wrong! Malware and viruses infecting computer systems don't always affect a system's availability but may affect its integrity or even confidentiality!",
         image: "images/wrong.jpeg"
     },
     { // 40 NEW SLIDE
-        speech: "Wrong! explenation.",
+        speech: "Wrong! XSS attacks are usually used to steal sensitive information and compromise a system's confidentiality!",
         image: "images/wrong.jpeg"
     },
     { // 41
@@ -247,6 +247,9 @@ back.addEventListener("click", () => {
     }
     else if (index >= 13 && index % 6 === 5 && index <= 40) {
         index -= 5;
+    }
+    else if (index === 41){
+        index = 36;
     }     
     else {
         index--;
@@ -366,10 +369,10 @@ function updateUI() {
         )
     } else if (index == 12) {
         activateQuiz(
-            "a1",
-            "a2",
-            "a3",
-            "a4"
+            "Privacy is a subset of confidentiality",
+            "Confidentiality is a subset of privacy",
+            "Confidentiality and privacy are completely unrelated",
+            "Confidentiality and privacy are the same"
         )
     } else if (index == 18) {
         activateQuiz(
@@ -380,10 +383,10 @@ function updateUI() {
         )
     } else if (index == 24) {
         activateQuiz(
-            "a1",
-            "a2",
-            "a3",
-            "a4"
+            "Ensuring that data is available to authorized users when they need it",
+            "Ensuring that data is accurate and has not been tampered with",
+            "Ensuring that data is protected from unauthorized access and disclosure",
+            "Ensuring that data is stored in a secure and reliable manner"
         )
     } else if (index == 30) {
         activateQuiz(
@@ -394,10 +397,10 @@ function updateUI() {
         )
     } else if (index == 36) {
         activateQuiz(
-            "a1",
-            "a2",
-            "a3",
-            "a4"
+            "Data breaches and theft of sensitive information",
+            "Distributed denial-of-service (DDoS) attacks",
+            "Malware and viruses infecting computer systems",
+            "Cross-site scripting (XSS) attacks"
         )
     }
 }
