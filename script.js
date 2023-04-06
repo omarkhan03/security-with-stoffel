@@ -1,5 +1,6 @@
 const back = document.getElementById("back");
 const next = document.getElementById("next");
+const backToStart = document.getElementById("back-to-start");
 
 const availability = document.getElementById("availability");
 const confidentiality = document.getElementById("confidentiality");
@@ -259,6 +260,12 @@ back.addEventListener("click", () => {
     updateUI();
 })
 
+backToStart.addEventListener("click", () => {
+    index = 0;
+    updateStoffel();
+    updateUI();
+})
+
 no.addEventListener("click", () => {
     index = 4;
     updateStoffel();
@@ -448,6 +455,9 @@ a4.addEventListener("click", () => {
     updateUI();
 })
 
+
+
+/*------------- Credits stuff -------------*/
 
 // open modal by id
 function openModal(id) {
