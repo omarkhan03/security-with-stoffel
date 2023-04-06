@@ -73,3 +73,27 @@ button:hover {
 .stoffel * {
     display : none;
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 203, 148);
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+
+
+}
+
+nav a {
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    height: 3rem;
+}
