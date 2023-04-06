@@ -13,14 +13,22 @@
 
 
 <body>
-
+ 
     <nav>
 
-        <img src="images/logo.png" alt="">
-        <a href="about.html">Back to start</a>
+        <img src="images/logo2.png" alt="">
+        <a href="">Back to start</a>
+        <a onclick="openModal('modal-1')">Credits</a>
         <a href="https://github.com/omarkhan03/329_wireframe" target="_blank">Source code</a>
 
     </nav>
+
+    <div id="modal-1" class="jw-modal">
+        <div class="jw-modal-body">
+            <h1>A custom modal popup</h1>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
 
     <p class="speech" id="speech">Hi! I'm Stoffel the red panda!</p>
 
