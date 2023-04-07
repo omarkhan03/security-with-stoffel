@@ -21,6 +21,8 @@ const no = document.getElementById("no");
 const yes = document.getElementById("yes");
 const quiz = document.getElementById("quiz");
 
+const score = document.getElementById("score");
+
 const a1 = document.getElementById("a1");
 const a2 = document.getElementById("a2");
 const a3 = document.getElementById("a3");
@@ -197,6 +199,8 @@ const sequence = [
     },
 ]
 
+const answered = new Set();
+let currentScore = 0;
 let index = 0;
 updateStoffel();
 updateUI();
@@ -262,6 +266,8 @@ back.addEventListener("click", () => {
 
 backToStart.addEventListener("click", () => {
     index = 0;
+    currentScore = 0;       // up for debate if score should be reset
+    answered.clear();       // connected to score reset
     updateStoffel();
     updateUI();
 })
@@ -304,9 +310,14 @@ function updateStoffel() {
             confidentiality.style.display = "";
             break; 
         case "images/correct.jpeg":
+
+            if (!answered.has(index)) {     // Increments score when correct stoffel is shown
+                currentScore++;             // So long as it hasnt been shown before
+                answered.add(index);
+            }
             correct.style.display = "";
             break;
-        case "images/wrong.jpeg":
+        case "images/wrong.jpeg":            
             wrong.style.display = "";
             break;
         case "images/smile.jpeg":
@@ -336,9 +347,8 @@ function updateStoffel() {
             break;
     }
 
-
-
     speech.innerHTML = sequence[index].speech;
+    score.innerHTML = "Score: " + currentScore + " / (# of questions)";
 }
 
 function updateUI() {
