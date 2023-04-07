@@ -266,8 +266,6 @@ back.addEventListener("click", () => {
 
 backToStart.addEventListener("click", () => {
     index = 0;
-    currentScore = 0;       // up for debate if score should be reset
-    answered.clear();       // connected to score reset
     updateStoffel();
     updateUI();
 })
