@@ -29,171 +29,192 @@ const a3 = document.getElementById("a3");
 const a4 = document.getElementById("a4");
 
 const sequence = [
-    { // 0
+    // 0
+    {
+        speech: "",
+        image: "images/big-logo.jpeg"
+    },
+    { // 1
         speech: "Hi! I'm Stoffel the red panda!",
         image: "images/roll.jpeg"
     },
-    { // 1
+    { // 2
         speech: "I'm here to teach you about the security triad!",
         image: "images/open.jpeg"
     },
-    { // 2
+    { // 3
         speech: "Before we start, please enter your password below!",
         image: "images/closed.jpeg",
     },
-    { // 3 asks for password
+    { // 4 asks for password
         speech: "Okay, one more question before we begin... was that your real password? &#129320;",
         image: "images/smile.jpeg"
     },
-    { // 4
-        speech: "Good! You passed the first lesson! Never share your password with anyone!",
-        image: "images/open.jpeg"
-    },
     { // 5
+        speech: "Good! You passed the first lesson! Never share your password with anyone!",
+        image: "images/correct.jpeg"
+    },
+    { // 6
         speech: "Shame on you! You failed the first lesson! Never share your password with anyone!",
         image: "images/yawn.jpeg"
     },
-    { // 6 introduces the triad
+    { // 7 introduces the triad
         speech: "There are three main principles of security: confidentiality, integrity, and availability.",
         image: "images/open.jpeg"
     },
-    { // 7 confidentiality
+    { // 8 confidentiality
         speech: "First off, we have confidentiality. This means that only authorized users should be able to access information.",
         image: "images/confidentiality.jpeg"
     },
-    { // 8
+    { // 9
         speech: "Pop quiz: Who should have access to your email password?",
         image: "images/smile.jpeg"
     },
-    { // 9
+    { // 10
         speech: "Wrong! Only you should have access to your email password!",
         image: "images/wrong.jpeg"
     },
-    { // 10
+    { // 11
         speech: "Correct! Only you should have access to your email password!",
         image: "images/correct.jpeg"
     },
-    { // 11
+    { // 12
         speech: "Confidentiality is important because it prevents unauthorized users from accessing sensitive information.",
         image: "images/confidentiality.jpeg"
     },
-    { // 12
+    { // 13
         speech: "Which of the following best describes the relationship between confidentiality and privacy?",
         image: "images/smile.jpeg"
     },
-    { // 13
-        speech: "Wrong! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used. Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
+    { // 14
+        speech: "Wrong! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used.",
         image: "images/wrong.jpeg"
     },
-    { // 14
-        speech: "Correct! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used. Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
+    { // 15
+        speech: "Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
+        image: "images/peek.jpeg"
+    },
+    { // 16
+        speech: "Correct! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used.",
         image: "images/correct.jpeg"
     },
-    { // 15 NEW SLIDE
+    { // 17
+        speech: "Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
+        image: "images/peek.jpeg"
+    },
+    { // 18 NEW SLIDE
         speech: "Wrong! Confidentiality and privacy are absolutely related!",
         image: "images/wrong.jpeg"
     },
-    { // 16 NEW SLIDE
+    { // 19 NEW SLIDE
         speech: "Wrong! Although confidentiality and privacy are related, they are not the same!",
         image: "images/wrong.jpeg"
     },
-    { // 17
+    { // 20
         speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted.",
         image: "images/sleep.jpeg"
     },
-    { // 18
+    { // 21
         speech: "Which of these would compromise a system's integrity?",
         image: "images/smile.jpeg"
     },
-    { // 19
+    { // 22
         speech: "Wrong! A user's password being leaked would compromise the system's confidentality, not its integrity!",
         image: "images/wrong.jpeg"
     },
-    { // 20
+    { // 23
         speech: "Correct! Corruption of files would compromise the system's integrity! Files must always be proteted from tampering and corruption.",
         image: "images/correct.jpeg"
     },
-    { // 21 NEW SLIDE
+    { // 24 NEW SLIDE
         speech: "Wrong! Creating backups of sensitive files would actually IMPROVE a system's integrity!",
         image: "images/wrong.jpeg"
     },
-    { // 22 NEW SLIDE
+    { // 25 NEW SLIDE
         speech: "Wrong! Spilling water on your computer when you're logged into the system would not compromise the system's integrity, it wil only damage your own computer!",
         image: "images/wrong.jpeg"
     },
-    { // 23
+    { // 26
         speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
         image: "images/smile.jpeg"
     },
-    { // 24
+    { // 27
         speech: "Which of these best describes the concept of integrity?",
         image: "images/smile.jpeg"
     },
-    { // 25
+    { // 28
         speech: "Wrong! Ensuring that data is available to authorized users when they need it describes the concept of availability!",
         image: "images/wrong.jpeg"
     },
-    { // 26
-        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle. In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems. Ensuring data integrity involves using various techniques such as cryptographic hashing, digital signatures, access controls, and backups to detect and prevent unauthorized changes to data.",
+    { // 29
+        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle. <br/> In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems.",
         image: "images/correct.jpeg"
     },
-    { // 27 NEW SLIDE
+    { // 30
+        speech: " Ensuring data integrity involves using various techniques such as cryptographic hashing, digital signatures, access controls, and backups to detect and prevent unauthorized changes to data.",
+        image: "images/roll.jpeg"
+    },
+    { // 31 NEW SLIDE
         speech: "Wrong! Ensuring that data is protected from unauthorized access and disclosure describes the concept of confidentiality!",
         image: "images/wrong.jpeg"
     },
-    { // 28 NEW SLIDE
+    { // 32 NEW SLIDE
         speech: "Wrong! Although ensuring that data is stored in a secure and reliable manner might improve a system's integrity, it does not describe the concept of integrity!",
         image: "images/wrong.jpeg"
     },
-    { // 29
+    { // 33
         speech: "Perfect! Finally, we have availability, which is the principle that data should be accessible to authorized users when they need it.",
         image: "images/availability.jpeg"
     },
-    { // 30
+    { // 34
         speech: "Pop quiz: Given the definition, which of these would BEST improve a system's availability?",
         image: "images/smile.jpeg"
     },
-    { // 31
+    { // 35
         speech: "Wrong! A weak internet connection doesn't affect a system's availability, it just makes it less accessible for you!",
         image: "images/wrong.jpeg"
     },
-    { // 32
+    { // 36
         speech: "Correct! Having the option of accessing the system regardless of what device you're using is a great way of increasing a system's availability!",
         image: "images/correct.jpeg"
     },
-    { // 33 NEW SLIDE
+    { // 37 NEW SLIDE
         speech: "Wrong! Why did you even pick this!? This is the worst option! It completely destroys the system's availability.",
         image: "images/wrong.jpeg"
     },
-    { // 34 NEW SLIDE
+    { // 38 NEW SLIDE
         speech: "Sort of? Although having the option to view a website in multiple languages improves its availability, there is a better option!",
         image: "images/wrong.jpeg"
     },
-    { // 35
+    { // 39
         speech: "Availability is important because it makes a system more reliable because users will have the safety of knowing the system will always be there.",
         image: "images/availability.jpeg"
     },
-    { // 36
+    { // 40
         speech: "Which of the following is a common threat to a system's availability?",
         image: "images/smile.jpeg"
     },
-    { // 37
+    { // 41
         speech: "Wrong! Data breaches and theft of sensitive information are threats to a system's confidentiality!",
         image: "images/wrong.jpeg"
     },
-    { // 38
-        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users. DDoS attacks can be launched using various techniques, such as amplification attacks, reflection attacks, and application-layer attacks, and they can be difficult to mitigate once they are underway.",
+    { // 42
+        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. <br/> In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users.",
         image: "images/correct.jpeg"
     },
-    { // 39 NEW SLIDE
+    { // 43
+        speech: "DDoS attacks can be launched using various techniques, such as amplification attacks, reflection attacks, and application-layer attacks, and they can be difficult to mitigate once they are underway.",
+        image: "images/open.jpeg"
+    },
+    { // 44 NEW SLIDE
         speech: "Wrong! Malware and viruses infecting computer systems don't always affect a system's availability but may affect its integrity or even confidentiality!",
         image: "images/wrong.jpeg"
     },
-    { // 40 NEW SLIDE
+    { // 45 NEW SLIDE
         speech: "Wrong! XSS attacks are usually used to steal sensitive information and compromise a system's confidentiality!",
         image: "images/wrong.jpeg"
     },
-    { // 41
+    { // 46
         speech: "Now that you know about the security triad, you can protect yourself from cyber attacks!",
         image: "images/yawn.jpeg"
     },
@@ -346,7 +367,7 @@ function updateStoffel() {
     }
 
     speech.innerHTML = sequence[index].speech;
-    score.innerHTML = "Score: " + currentScore + " / (# of questions)";
+    score.innerHTML = "Score: " + currentScore + " 7 Questions";
 }
 
 function updateUI() {
@@ -444,7 +465,7 @@ a2.addEventListener("click", () => {
 })
 
 a3.addEventListener("click", () => {
-    if (index === 8) {
+    if (index === 9) {
         index ++;
     } else {
         index += 3;
@@ -454,7 +475,7 @@ a3.addEventListener("click", () => {
 })
 
 a4.addEventListener("click", () => {
-    if (index === 8) {
+    if (index === 9) {
         index ++;
     } else {
         index += 4;
