@@ -20,6 +20,8 @@ const pwd = document.getElementById("password");
 const no = document.getElementById("no");
 const yes = document.getElementById("yes");
 const quiz = document.getElementById("quiz");
+const quizRow1 = document.getElementById("quiz-row-1");
+const quizRow2 = document.getElementById("quiz-row-2");
 
 const score = document.getElementById("score");
 
@@ -549,6 +551,33 @@ function activateQuiz(answer1, answer2, answer3, answer4) {
     quiz.style.display = '';
     back.style.display = 'none';
     next.style.display = 'none';
+
+    //randomize answers
+
+    //select randomly between either 0 or 1
+    let random = Math.round(Math.random());
+    console.log(random)
+    if (random === 0) {
+        quiz.className = "quiz-column"
+    } else {
+        quiz.className = "quiz-column-reverse"
+    }
+
+    random = Math.round(Math.random());
+    console.log(random)
+    if (random === 0) {
+        quizRow1.className = "quiz-row"
+    } else {
+        quizRow1.className = "quiz-row-reverse"
+    }
+
+    random = Math.round(Math.random());
+    console.log(random)
+    if (random === 0) {
+        quizRow2.className = "quiz-row"
+    } else {
+        quizRow2.className = "quiz-row-reverse"
+    }
 
     a1.innerHTML = answer1;
     a2.innerHTML = answer2;

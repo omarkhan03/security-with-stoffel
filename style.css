@@ -32,14 +32,36 @@ h1 {
     transform: translateX(50%);
 }
 
-.quiz {
-
+.quiz-column {
     /* flexbox */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+.quiz-column-reverse {
+    /* flexbox */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-row {
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-row-reverse {
+    /* flexbox */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .links {
