@@ -45,13 +45,13 @@ const sequence = [
         back: 0
     },
     { // 2
-        speech: "I'm here to teach you about the security triad!",
+        speech: "I'm here to teach you about the security triad &#128522;",
         image: "images/open.jpeg",
         next: 3,
         back: 1
     },
     { // 3
-        speech: "Before we start, please enter your password below!",
+        speech: "Before we start, please enter your password below &#128516;",
         image: "images/closed.jpeg",
         next: 4,
         back: 2
@@ -63,13 +63,13 @@ const sequence = [
         back: null,
     },
     { // 5
-        speech: "Good! You passed the first lesson! Never share your password with anyone!",
+        speech: "Good! You passed the first lesson! Never share your password with anyone &#128521;",
         image: "images/correct.jpeg",
         next: 7,
         back: 3
     },
     { // 6
-        speech: "Shame on you! You failed the first lesson! Never share your password with anyone!",
+        speech: "Shame on you, You failed the first lesson &#128561 Never share your password with anyone!",
         image: "images/yawn.jpeg",
         next: 7,
         back: 3
@@ -81,7 +81,7 @@ const sequence = [
         back: 3
     },
     { // 8 confidentiality
-        speech: "First off, we have confidentiality. This means that only authorized users should be able to access information.",
+        speech: "First off, we have confidentiality. This means that only authorized users should be able to access information &#128373;",
         image: "images/confidentiality.jpeg",
         next: 9,
         back: 7
@@ -105,25 +105,25 @@ const sequence = [
         back: 9
     },
     { // 12
-        speech: "Confidentiality is important because it prevents unauthorized users from accessing sensitive information.",
+        speech: "Confidentiality is important because it prevents unauthorized users from accessing sensitive information &#128683; &#128520;",
         image: "images/confidentiality.jpeg",
         next: 13,
         back: 9
     },
     { // 13
-        speech: "Which of the following best describes the relationship between confidentiality and privacy?",
+        speech: "Which of the following best describes the relationship between confidentiality and privacy? &#129300",
         image: "images/smile.jpeg",
         correct: 15,
         wrong: [14, 17, 18]
     },
     { // 14
-        speech: "Wrong! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used.",
+        speech: "Wrong! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used &#128577;",
         image: "images/wrong.jpeg",
         next: 16,
         back: 13
     },
     { // 15
-        speech: "Correct! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used.",
+        speech: "Correct! Confidentiality is concerned with protecting sensitive information from unauthorized access or disclosure, while privacy is a broader concept that refers to an individual's right to control their personal information and how it is used &#128175",
         image: "images/correct.jpeg",
         next: 16,
         back: 13
@@ -135,19 +135,19 @@ const sequence = [
         back: 13
     },
     { // 17
-        speech: "Wrong! Confidentiality and privacy are absolutely related!",
+        speech: "Wrong! Confidentiality and privacy are absolutely related! &#128544",
         image: "images/wrong.jpeg",
         next: 16,
         back: 13
     },
     { // 18
-        speech: "Wrong! Although confidentiality and privacy are related, they are not the same!",
+        speech: "Wrong! Although confidentiality and privacy are related, they are not the same &#128533",
         image: "images/wrong.jpeg",
         next: 16,
         back: 13
     },
     { // 19
-        speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted.",
+        speech: "Great! Now let's move on to integrity, integrity is the principle that data should neither be tampered with nor accidentally corrupted &#128737;",
         image: "images/sleep.jpeg",
         next: 20,
         back: 16
@@ -159,25 +159,25 @@ const sequence = [
         wrong: [21, 23, 24]
     },
     { // 21
-        speech: "Wrong! A user's password being leaked would compromise the system's confidentality, not its integrity!",
+        speech: "Wrong! A user's password being leaked would compromise the system's confidentality, not its integrity! &#128565",
         image: "images/wrong.jpeg",
         next: 25,
         back: 20
     },
     { // 22
-        speech: "Correct! Corruption of files would compromise the system's integrity! Files must always be proteted from tampering and corruption.",
+        speech: "Correct! Corruption of files would compromise the system's integrity! &#129327; Files must always be proteted from tampering and corruption!",
         image: "images/correct.jpeg",
         next: 25,
         back: 20
     },
     { // 23
-        speech: "Wrong! Creating backups of sensitive files would actually IMPROVE a system's integrity!",
+        speech: "Wrong! Creating backups of sensitive files would actually IMPROVE a system's integrity! &#129300",
         image: "images/wrong.jpeg",
         next: 25,
         back: 20
     },
     { // 24
-        speech: "Wrong! Spilling water on your computer when you're logged into the system would not compromise the system's integrity, it wil only damage your own computer!",
+        speech: "Wrong! Spilling water on your computer when you're logged into the system would not compromise the system's integrity, it wil only damage your own computer! &#129322",
         image: "images/wrong.jpeg",
         next: 25,
         back: 20
@@ -195,13 +195,13 @@ const sequence = [
         wrong: [27, 30, 31]
     },
     { // 27
-        speech: "Wrong! Ensuring that data is available to authorized users when they need it describes the concept of availability!",
+        speech: "Wrong! Ensuring that data is available to authorized users when they need it describes the concept of availability! &#128565",
         image: "images/wrong.jpeg",
         next: 32,
         back: 26
     },
     { // 28
-        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle. <br/> <br/> In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems.",
+        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle &#127919; <br/> <br/> In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems.",
         image: "images/correct.jpeg",
         next: 32,
         back: 26
@@ -213,19 +213,19 @@ const sequence = [
         back: 28
     },
     { // 30
-        speech: "Wrong! Ensuring that data is protected from unauthorized access and disclosure describes the concept of confidentiality!",
+        speech: "Wrong! Ensuring that data is protected from unauthorized access and disclosure describes the concept of confidentiality! &#128565",
         image: "images/wrong.jpeg",
         next: 32,
         back: 26
     },
     { // 31
-        speech: "Wrong! Although ensuring that data is stored in a secure and reliable manner might improve a system's integrity, it does not describe the concept of integrity!",
+        speech: "Wrong! Although ensuring that data is stored in a secure and reliable manner might improve a system's integrity, it does not describe the concept of integrity! &#128517",
         image: "images/wrong.jpeg",
         next: 32,
         back: 26
     },
     { // 32
-        speech: "Perfect! Finally, we have availability, which is the principle that data should be accessible to authorized users when they need it.",
+        speech: "Perfect! Finally, we have availability, which is the principle that data should be accessible to authorized users when they need it &#128104;&#128273;&#128274;->&#128275;",
         image: "images/availability.jpeg",
         next: 33,
         back: 26
@@ -237,25 +237,25 @@ const sequence = [
         wrong: [34, 36, 37]
     },
     { // 34
-        speech: "Wrong! A weak internet connection doesn't affect a system's availability, it just makes it less accessible for you!",
+        speech: "Wrong! A weak internet connection doesn't affect a system's availability, it just makes it less accessible for you! &#128577",
         image: "images/wrong.jpeg",
         next: 38,
         back: 33
     },
     { // 35
-        speech: "Correct! Having the option of accessing the system regardless of what device you're using is a great way of increasing a system's availability!",
+        speech: "Correct! Having the option of accessing the system regardless of what device you're using is a great way of increasing a system's availability! &#128175",
         image: "images/correct.jpeg",
         next: 38,
         back: 33
     },
     { // 36
-        speech: "Wrong! Why did you even pick this!? This is the worst option! It completely destroys the system's availability.",
+        speech: "Wrong! Why did you even pick this!? &#129324; This is the worst option! &#128557 It completely destroys the system's availability. &#128128;&#128128;&#128128",
         image: "images/wrong.jpeg",
         next: 38,
         back: 33
     },
     { // 37
-        speech: "Sort of? Although having the option to view a website in multiple languages improves its availability, there is a better option!",
+        speech: "Sort of? Although having the option to view a website in multiple languages improves its availability, there is a better option! &#128533",
         image: "images/wrong.jpeg",
         next: 38,
         back: 33
@@ -273,13 +273,13 @@ const sequence = [
         wrong: [40, 43, 44]
     },
     { // 40
-        speech: "Wrong! Data breaches and theft of sensitive information are threats to a system's confidentiality!",
+        speech: "Wrong! Data breaches and theft of sensitive information are threats to a system's confidentiality! &#128548",
         image: "images/wrong.jpeg",
         next: 45,
         back: 39
     },
     { // 41
-        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. <br/> <br/> In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users.",
+        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. &#128584 <br/> <br/> In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users.",
         image: "images/correct.jpeg",
         next: 42,
         back: 39
@@ -291,19 +291,19 @@ const sequence = [
         back: 41
     },
     { // 43
-        speech: "Wrong! Malware and viruses infecting computer systems don't always affect a system's availability but may affect its integrity or even confidentiality!",
+        speech: "Wrong! Malware and viruses infecting computer systems don't always affect a system's availability but may affect its integrity or even confidentiality! &#128565",
         image: "images/wrong.jpeg",
         next: 45,
         back: 39
     },
     { // 44
-        speech: "Wrong! XSS attacks are usually used to steal sensitive information and compromise a system's confidentiality!",
+        speech: "Wrong! XSS attacks are usually used to steal sensitive information and compromise a system's confidentiality! &#128548",
         image: "images/wrong.jpeg",
         next: 45,
         back: 39
     },
     { // 45
-        speech: "Now that you know about the security triad, you can protect yourself from cyber attacks! <br/> <br/> Feel free to take the quiz again to test your knowledge!",
+        speech: "Now that you know about the security triad, you can protect yourself from cyber attacks! &#128526 <br/> <br/> Feel free to take the quiz again to test your knowledge!",
         image: "images/yawn.jpeg",
         next: null,
         back: 39,
@@ -504,8 +504,8 @@ function updateUI() {
     } else if (index == 9) {
         activateQuiz(
             "Me and my boss",
-            "Only me!", 
-            "Anyone who asks",
+            "Only me! &#128274;", 
+            "Anyone who asks &#128275;",
             "Only you, Stoffel <br/> the red panda!"
         )
     } else if (index == 13) {
@@ -518,30 +518,30 @@ function updateUI() {
     } else if (index == 20) {
         activateQuiz(
             "A casual user's system is leaked",
-            "Malware that corrupts the files in the system",
-            "Creating backups of sensitive files",
-            "Spilling water on your computer while you're logged in to the system"
+            "Malware that corrupts the files in the system &#x1f9a0;",
+            "Creating backups of sensitive files &#128193;",
+            "Spilling water on your computer while you're logged in to the system &#128167; &#128187;"
         )
     } else if (index == 26) {
         activateQuiz(
             "Ensuring that data is available to authorized users when they need it",
-            "Ensuring that data is accurate and has not been tampered with",
-            "Ensuring that data is protected from unauthorized access and disclosure",
-            "Ensuring that data is stored in a secure and reliable manner"
+            "Ensuring that data is accurate and has not been tampered with &#127919;",
+            "Ensuring that data is protected from unauthorized access and disclosure &#128274;",
+            "Ensuring that data is stored in a secure and reliable manner &#128272;"
         )
     } else if (index == 33) {
         activateQuiz(
-            "A weak internet connection",
-            "Allowing access to the system from both mobile phones and computers",
-            "Creating ransomware for the system",
-            "Having the option of viewing the website in multiple languages"
+            "A weak internet connection &#128246;",
+            "Allowing access to the system from both mobile phones and computers &#128241; &#128187;",
+            "Creating ransomware for the system &#x1f9a0;",
+            "Having the option of viewing the website in multiple languages &#127758;"
         )
     } else if (index == 39) {
         activateQuiz(
-            "Data breaches and theft of sensitive information",
-            "Distributed denial-of-service (DDoS) attacks",
-            "Malware and viruses infecting computer systems",
-            "Cross-site scripting (XSS) attacks"
+            "Data breaches and theft of sensitive information &#9888;",
+            "Distributed denial-of-service (DDoS) attacks &#9940;",
+            "Malware and viruses infecting computer systems &#x1f9a0;",
+            "Cross-site scripting (XSS) attacks &#128137;"
         )
     }
 }
