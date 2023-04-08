@@ -199,7 +199,7 @@ const sequence = [
         back: 26
     },
     { // 28
-        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle. <br/> In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems.",
+        speech: "Correct! Data integrity refers to the concept of maintaining the accuracy, completeness, and consistency of data over its entire lifecycle. <br/> <br/> In cybersecurity, data integrity is crucial to ensure that information has not been modified, deleted, or otherwise tampered with by unauthorized individuals or systems.",
         image: "images/correct.jpeg",
         next: 32,
         back: 26
@@ -277,7 +277,7 @@ const sequence = [
         back: 39
     },
     { // 41
-        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. <br/> In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users.",
+        speech: "Correct! DDoS attacks are a common threat to the availability of computer systems, websites, and networks. <br/> <br/> In a DDoS attack, a large number of compromised systems, often called bots or zombies, flood a targeted system or network with a massive amount of traffic or requests, causing it to become overloaded and unavailable to legitimate users.",
         image: "images/correct.jpeg",
         next: 42,
         back: 39
@@ -301,7 +301,7 @@ const sequence = [
         back: 39
     },
     { // 45
-        speech: "Now that you know about the security triad, you can protect yourself from cyber attacks! <br/> Feel free to take the quiz again to test your knowledge!",
+        speech: "Now that you know about the security triad, you can protect yourself from cyber attacks! <br/> <br/> Feel free to take the quiz again to test your knowledge!",
         image: "images/yawn.jpeg",
         next: null,
         back: 39,
