@@ -165,7 +165,7 @@ const sequence = [
         back: 20
     },
     { // 22
-        speech: "Correct! Corruption of files would compromise the system's integrity! &#129327; Files must always be proteted from tampering and corruption!",
+        speech: "Correct! Corruption of files would compromise the system's integrity! &#129327; Files must always be protected from tampering and corruption!",
         image: "images/correct.jpeg",
         next: 25,
         back: 20
