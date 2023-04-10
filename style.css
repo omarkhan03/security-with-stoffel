@@ -6,7 +6,7 @@ body {
 }
 
 .pic {
-    height: 50vh;
+    height: 40vh;
     margin-left: 50vw;
     transform: translateX(-50%);
 }
