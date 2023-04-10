@@ -9,4 +9,8 @@ Credits: Arian Safari, Artemy Gavrilov, Marianna Ferreira, Omar Khan, Omar Ragab
 
 Created for CPSC 329. Instructor: Janet Leahy
 
-Inspiration: https://www.youtube.com/watch?v=c36UNSoJenI
+## Demo video:
+[![Security with Stoffel demo video](https://img.youtube.com/vi/FqCVmw_V5o4/0.jpg)](https://www.youtube.com/watch?v=FqCVmw_V5o4)
+
+## Inspiration: 
+[![Inspiration](https://img.youtube.com/vi/c36UNSoJenI/0.jpg)](https://www.youtube.com/watch?v=c36UNSoJenI)
