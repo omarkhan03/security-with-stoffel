@@ -58,7 +58,7 @@ const sequence = [
     },
     { // 4 asks for password
         speech: "Okay, one more question before we begin... was that your real password? &#129320;",
-        image: "images/smile.jpeg",
+        image: "images/peek.jpeg",
         next: null,
         back: null,
     },
@@ -88,7 +88,7 @@ const sequence = [
     },
     { // 9
         speech: "Pop quiz: Who should have access to your email password?",
-        image: "images/smile.jpeg",
+        image: "images/closed.jpeg",
         correct: 11,
         wrong: 10
     },
@@ -112,7 +112,7 @@ const sequence = [
     },
     { // 13
         speech: "Which of the following best describes the relationship between confidentiality and privacy? &#129300",
-        image: "images/smile.jpeg",
+        image: "images/closed.jpeg",
         correct: 15,
         wrong: [14, 17, 18]
     },
@@ -130,7 +130,7 @@ const sequence = [
     },
     { // 16
         speech: "Confidentiality is a key aspect of privacy, but privacy also encompasses other elements such as data ownership, data accuracy, and data usage. Therefore, confidentiality can be seen as a subset of privacy.",
-        image: "images/peek.jpeg",
+        image: "images/smile.jpeg",
         next: 19,
         back: 13
     },
@@ -154,7 +154,7 @@ const sequence = [
     },
     { // 20
         speech: "Which of these would compromise a system's integrity?",
-        image: "images/smile.jpeg",
+        image: "images/open.jpeg",
         correct: 22,
         wrong: [21, 23, 24]
     },
@@ -184,13 +184,13 @@ const sequence = [
     },
     { // 25
         speech: "Integrity is important because it protects data from being modified or destroyed by unauthorized users.",
-        image: "images/smile.jpeg",
+        image: "images/open.jpeg",
         next: 26,
         back: 20
     },
     { // 26
         speech: "Which of these best describes the concept of integrity?",
-        image: "images/smile.jpeg",
+        image: "images/closed.jpeg",
         correct: 28,
         wrong: [27, 30, 31]
     },
@@ -207,8 +207,8 @@ const sequence = [
         back: 26
     },
     { // 29
-        speech: " Ensuring data integrity involves using various techniques such as cryptographic hashing, digital signatures, access controls, and backups to detect and prevent unauthorized changes to data.",
-        image: "images/roll.jpeg",
+        speech: "Ensuring data integrity involves using various techniques such as cryptographic hashing, digital signatures, access controls, and backups to detect and prevent unauthorized changes to data.",
+        image: "images/peek.jpeg",
         next: 32,
         back: 28
     },
@@ -232,7 +232,7 @@ const sequence = [
     },
     { // 33
         speech: "Pop quiz: Given the definition, which of these would BEST improve a system's availability?",
-        image: "images/smile.jpeg",
+        image: "images/closed.jpeg",
         correct: 35,
         wrong: [34, 36, 37]
     },
@@ -268,7 +268,7 @@ const sequence = [
     },
     { // 39
         speech: "Which of the following is a common threat to a system's availability?",
-        image: "images/smile.jpeg",
+        image: "images/closed.jpeg",
         correct: 41,
         wrong: [40, 43, 44]
     },
