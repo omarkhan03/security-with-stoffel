@@ -1,7 +1,7 @@
 # Security with Stoffel
 
-at [the-pollution-panda-problem.vercel.app](https://the-pollution-panda-problem.vercel.app.vercel.app/), and enrich your mind.
+Come pay us a visit at [security-with-stoffel.vercel.app](https://security-with-stoffel.vercel.app.vercel.app/), and enrich your mind.
 
 
-Created for . Instructor: 
+Created for those who whish to learn about cybersecurity. Instructor: Janet Leahy
 
